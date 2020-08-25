@@ -1,0 +1,47 @@
+{
+  "extends": ["taro", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "semi": "warn",
+    "arrow-spacing": "warn",
+    "arrow-parens": ["warn", "as-needed"],
+    "jsx-quotes": ["warn", "prefer-single"],
+    "no-irregular-whitespace": "warn",
+    "comma-spacing": "warn",
+    "object-curly-spacing": ["warn", "always"],
+    "space-before-blocks": "warn",
+    "dot-location": ["warn", "property"],
+    "key-spacing": "warn",
+    "block-spacing": ["warn", "always"],
+    "brace-style": "warn",
+    "keyword-spacing": "warn",
+    "space-before-function-paren": "warn",
+    "quotes": [1, "single"],
+    "import/no-commonjs": 0,
+    "taro/render-props": 0,
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "Taro" }],
+    "@typescript-eslint/member-delimiter-style": ["error", {
+      "multiline": {
+        "delimiter": "semi",
+        "requireLast": true
+      },
+      "singleline": {
+        "delimiter": "semi",
+        "requireLast": true
+      }
+    }],
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-empty-function": ["off"]
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "useJSXTextNode": true,
+    "project": "./tsconfig.json"
+  }
+}

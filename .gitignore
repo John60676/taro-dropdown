@@ -1,0 +1,21 @@
+# Logs
+*.log
+
+# TypeScript cache
+*.tsbuildinfo
+
+# generate output
+dist/
+lib/
+
+# Dependency directories
+node_modules/
+
+# Vscode
+.vscode/
+
+# nvm
+.nvmrc
+
+# Other
+.DS_Store
