@@ -90,6 +90,6 @@
 	},
 	"dependencies": {
 		"classnames": "^2.2.6",
-		"taro-dom-align": "^1.1.2"
+		"taro-dom-align": "^1.1.3"
 	}
 }
