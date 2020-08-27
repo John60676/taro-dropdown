@@ -32,7 +32,7 @@ npm i taro-dropdown
 ```
 
 ## 效果截图
-![image.jpg](https://raw.githubusercontent.com/John60676/taro-dropdown/v0.1.2/assets/demo.jpg)
+![image.jpg](https://raw.githubusercontent.com/John60676/taro-dropdown/master/assets/demo.jpg)
 
 
 ## API
@@ -48,6 +48,8 @@ npm i taro-dropdown
 | visible | 菜单是否显示，**传入该值则需要自己手动控制菜单的显示与隐藏** | `boolean` | - |
 | arrow | 下拉框箭头是否显示 | `boolean` | `true` |
 | zIndex | 菜单以及mask的层级 | `number` | `5000` |
+| className | dropdown 组件的根元素类名 | `string` | - |
+| customStyle | dropdown 组件的根元素样式 | `CSSProperties` | - |
 | onVisibleChange | 菜单显示状态改变时调用，参数为 `visible`	 | `function(visible)	` | - |
 
 ## ⚠ 注意

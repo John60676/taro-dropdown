@@ -15,6 +15,8 @@ export type PlacementObjectType = {
 
 export interface DropdownPropsType {
   renderOverlay: ReactNode;
+  className?: string;
+  customStyle?: CSSProperties;
   overlayClassName?: string;
   overlayStyle?: CSSProperties;
   placement?: PlacementType;

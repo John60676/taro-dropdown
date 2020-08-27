@@ -14,6 +14,8 @@ const Dropdown: FC<DropdownPropsType> = props => {
   const {
     overlayClassName,
     overlayStyle,
+    className,
+    customStyle,
     visible = false,
     arrow = true,
     placement = 'bottomRight',
@@ -78,7 +80,7 @@ const Dropdown: FC<DropdownPropsType> = props => {
     return arrow;
   };
   return (
-    <View className={prefixCls}>
+    <View className={classNames(prefixCls, className)} style={customStyle}>
       <View id={targetBoxId} className={classNames(`${prefixCls}__targetBox`, disabledCls)} onClick={handleClick}>
         {props.children}
       </View>
