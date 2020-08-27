@@ -34,12 +34,12 @@ npm i taro-dropdown
 ## 效果截图
 ![image.jpg](https://raw.githubusercontent.com/John60676/taro-dropdown/v0.1.2/assets/demo.jpg)
 
-## API
 
+## API
 ### Props 属性如下
 
 | 参数 | 说明 | 类型 | 默认值 |
-|------|------|------|------|------|
+|------|------|------|------|
 | renderOverlay | 菜单Node节点  | `ReactNode` | - |
 | overlayClassName | 下拉菜单根元素的类名称	 | `string` | - |
 | overlayStyle | 下拉菜单根元素的样式 | `CSSProperties` | - | 
