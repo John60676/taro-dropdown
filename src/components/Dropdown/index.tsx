@@ -18,7 +18,7 @@ const Dropdown: FC<DropdownPropsType> = props => {
     customStyle,
     visible = false,
     arrow = true,
-    placement = 'bottomRight',
+    placement = 'bottomLeft',
     disabled = false,
     zIndex = 5000,
     onVisibleChange,
