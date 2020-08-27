@@ -32,7 +32,7 @@ npm i taro-dropdown
 ```
 
 ## 效果截图
-
+![image.jpg](https://raw.githubusercontent.com/John60676/taro-dropdown/v0.1.2/assets/demo.jpg)
 
 ## API
 
