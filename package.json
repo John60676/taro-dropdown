@@ -12,6 +12,16 @@
 	"bugs": {
 		"url": "https://github.com/John60676/taro-dropdown/issues"
 	},
+	"keywords": [
+		"taro",
+		"taro-dropdown",
+		"dropdown",
+		"menu",
+		"taro-dom-align",
+		"align",
+		"weapp",
+		"wechat"
+	],
 	"scripts": {
 		"clean": "rimraf -rf lib/*",
 		"copy": "make-dir lib && ncp src/index.ts lib/index.ts && ncp src/components lib/components",
