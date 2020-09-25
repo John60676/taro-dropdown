@@ -3,6 +3,7 @@ import { View } from '@tarojs/components';
 import useDomAlign from 'taro-dom-align';
 import classNames from 'classnames';
 import { ViewProps } from '@tarojs/components/types/View';
+import isEqual from 'lodash-es/isEqual';
 
 import { DropdownPropsType } from './types';
 import { getAlignFromPlacement, getAlignPopupClassName } from './utils';
@@ -47,7 +48,7 @@ const Dropdown: FC<DropdownPropsType> = props => {
         });
       }
     }
-  }, [customVisible, onVisibleChange, setSourceStyle, visible]);
+  }, [customVisible, setSourceStyle, visible]);
 
   // monitor visible
   useEffect(() => {
@@ -105,4 +106,7 @@ Dropdown.options = {
   addGlobalClass: true,
 };
 
-export default Dropdown;
+export default Taro.memo(Dropdown, (oldProps, newProps)=>{
+  const propsStr = 'overlayClassName,overlayStyle,className,customStyle,visible,arrow,placement,disabled,zIndex,align';
+  return propsStr.split(',').some(prop => isEqual(oldProps[prop], newProps[prop]));
+});
