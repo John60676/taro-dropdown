@@ -50,6 +50,7 @@ npm i taro-dropdown
 | zIndex | 菜单以及mask的层级 | `number` | `5000` |
 | className | dropdown 组件的根元素类名 | `string` | - |
 | customStyle | dropdown 组件的根元素样式 | `CSSProperties` | - |
+| align | 该值将合并到 placement 的配置中，设置参考 [taro-dom-align](https://github.com/John60676/taro-dom-align#alignconfig-%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3)  | `object` | - |
 | onVisibleChange | 菜单显示状态改变时调用，参数为 `visible`	 | `function(visible)	` | - |
 
 ## ⚠ 注意
