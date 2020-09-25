@@ -24,5 +24,6 @@ export interface DropdownPropsType {
   visible?: boolean;
   arrow?: boolean;
   zIndex?: number;
+  align?: Partial<DomAlignOptionType>;
   onVisibleChange?: (visible: boolean) => void;
 }
