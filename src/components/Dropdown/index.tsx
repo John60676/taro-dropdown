@@ -23,6 +23,7 @@ const Dropdown: FC<DropdownPropsType> = props => {
     disabled = false,
     zIndex = 5000,
     align = null,
+    hasPosition = false,
     onVisibleChange,
   } = props;
   const random = useMemo(() => `${new Date().getTime()}${Math.round(Math.random() * 1000)}`, []);
@@ -31,7 +32,11 @@ const Dropdown: FC<DropdownPropsType> = props => {
   const disabledCls = useMemo(() => disabled && `${prefixCls}__disabled`, [disabled]);
   const sourceBoxId = `taro-dropdown__sourceBox-${random}`;
   const targetBoxId = `taro-dropdown__targetBox-${random}`;
-  const alignOption = useMemo(() => Object.assign({}, getAlignFromPlacement(placement), align), [placement, align]);
+  const alignOption = useMemo(() => Object.assign({}, getAlignFromPlacement(placement), { hasPosition }, align), [
+    placement,
+    align,
+    hasPosition
+  ]);
   const [sourceStyle, doAlign, setSourceStyle] = useDomAlign(`#${sourceBoxId}`, `#${targetBoxId}`, alignOption);
   const mergedVisible = !customVisible && sourceStyle.display !== 'none';
   // close source box
@@ -106,7 +111,7 @@ Dropdown.options = {
   addGlobalClass: true,
 };
 
-export default Taro.memo(Dropdown, (oldProps, newProps)=>{
+export default Taro.memo(Dropdown, (oldProps, newProps) => {
   const propsStr = 'overlayClassName,overlayStyle,className,customStyle,visible,arrow,placement,disabled,zIndex,align';
   return propsStr.split(',').some(prop => isEqual(oldProps[prop], newProps[prop]));
 });
