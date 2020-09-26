@@ -50,6 +50,7 @@ npm i taro-dropdown
 | zIndex | 菜单以及mask的层级 | `number` | `5000` |
 | className | dropdown 组件的根元素类名 | `string` | - |
 | customStyle | dropdown 组件的根元素样式 | `CSSProperties` | - |
+| hasPosition | 组件的祖先元素是否含有 position 非 `static` 的情况，如果有请传入该属性，否则会出现定位有误 | `boolean` | - |
 | align | 该值将合并到 placement 的配置中，设置参考 [taro-dom-align](https://github.com/John60676/taro-dom-align#alignconfig-%E5%8F%82%E6%95%B0%E8%AF%A6%E8%A7%A3)  | `object` | - |
 | onVisibleChange | 菜单显示状态改变时调用，参数为 `visible`	 | `function(visible)	` | - |
 
@@ -57,6 +58,7 @@ npm i taro-dropdown
 
  - 目前仅支持 **微信小程序**
  - 由于小程序的限制，组件传入的 children **不能脱离父级文档**，否则将会导致菜单的定位出现错误
+ - 由于小程序的限制，当菜单组件的祖先元素含有 position 非 `static` 的情况，要设置 hasPosition，否则将会导致菜单的定位出现错误
 
 ## 许可
 

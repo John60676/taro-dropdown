@@ -11530,10 +11530,10 @@ tar@^6.0.2:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
-taro-dom-align@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/taro-dom-align/-/taro-dom-align-1.1.3.tgz#e91477c672a9a7063301cae37a1ff940d5b6c2e0"
-  integrity sha512-Y18rnXAmx6vjM5qSx1tG4Ujr+U5z3GqvYQyGHBvXDcC1KF50ZdKmJ3BIDdAeoH+hSC4SFBxCp28lWvDf9/2dOg==
+taro-dom-align@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/taro-dom-align/-/taro-dom-align-1.2.0.tgz#7c4775d5f54520b603c2879c06db5cc0bd303295"
+  integrity sha512-0kSiFuX6X8h+k2cRRn6oJqnxyZtnueQQuCUhSb7e833C903lVgaw5Rob5nmPDhwmfFzSVzHnUuGyTpmWknVIzg==
   dependencies:
     lodash-es "^4.17.15"
 
